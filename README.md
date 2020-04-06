@@ -1,0 +1,1 @@
+# php-lint-gh-action
