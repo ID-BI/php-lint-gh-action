@@ -1,5 +1,0 @@
-name: 'PHP Linting'
-description: 'Runs php linter'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
