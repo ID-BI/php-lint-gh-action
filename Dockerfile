@@ -10,7 +10,7 @@ LABEL repository="https://github.com/ID-BI/php-lint-gh-action"
 LABEL homepage="https://github.com/ID-BI/php-lint-gh-action"
 LABEL maintainer="Nick Aguilar <nick.aguilar@idbi.pe>"
 
-RUN mkdir /phplint && cd /phplint && composer require overtrue/phplint && ln -s /phplint/vendor/bin/phplint /usr/local/bin/phplint
+RUN mkdir /phplint && cd /phplint && composer require --quiet overtrue/phplint && ln -s /phplint/vendor/bin/phplint /usr/local/bin/phplint
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh
