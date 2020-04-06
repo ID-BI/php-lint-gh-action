@@ -14,7 +14,7 @@ workflow "PHP Linting" {
 }
 
 action "Execute" {
-  uses = "idbi/php-lint-gh-action@master"
+  uses = "id-bi/php-linter-gh-action@master"
 }
 
 ```
@@ -35,7 +35,7 @@ jobs:
 
     steps:
         - uses: actions/checkout@v2
-        - uses: idbi/php-lint-gh-action@master
+        - uses: id-bi/php-linter-gh-action@master
 
 ```
 
